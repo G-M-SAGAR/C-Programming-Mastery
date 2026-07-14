@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char sentence[] = "C programming is easy to learn";
+    char word[] = "easy";
+
+    char *ptr = strstr(sentence, word);
+
+    if(ptr != NULL)
+        printf("Word '%s' Found\n", word);
+    else
+        printf("Word '%s' Not Found\n", word);
+
+    return 0;
+}
